@@ -1,0 +1,209 @@
+.shadow-top {
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.15), 0 -6px 20px 0 rgba(0, 0, 0, 0.14);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-content button {
+    order: -1;
+    margin-right: 8px;
+}
+
+.icon-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.icon-group {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    color: white;
+
+}
+
+.textcolor {
+    color: #549ae6;
+    // padding-right: 5px
+}
+
+.member {
+    color: #ec9b0f;
+    // padding-right: 16px
+}
+
+.shortlisted {
+    color: #131313
+}
+
+.text-size {
+    font-size: 13px;
+}
+
+.icon-size {
+    font-size: 18px
+}
+
+.pt-6 {
+    padding-top: 5px
+}
+
+.fw-500 {
+    font-weight: 500;
+    font-size: 18px
+}
+
+.mail {
+    color: #ec9b0f;
+}
+
+.phone {
+    color: white
+}
+
+.fs-16 {
+    font-size: 16px
+}
+
+.fs-14 {
+    font-size: 14px
+}
+
+.fs-12 {
+    font-size: 12px
+}
+
+.datecolor {
+    color: #838788
+}
+
+.profile-icons {
+    color: #8dbef1
+}
+
+.commonone {
+    background: rgb(248, 246, 251);
+    background: linear-gradient(to top, #e5eafe, #fbf7fa);
+    border-radius: 12px
+}
+
+.commontwo {
+    background: rgb(254, 245, 227);
+    background: linear-gradient(to left, #fae3da, #fff6e6);
+    border-radius: 12px
+}
+
+.gap {
+    background-color: #f1f1f1;
+    height: 10px;
+}
+
+.p-7 {
+    padding: 7px;
+}
+
+.p-20 {
+    padding: 13px
+}
+
+.songs {
+    padding-top: 20px;
+    padding-left: 13px;
+}
+
+.img-size {
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 12px;
+}
+
+.cardHeight {
+    height: calc(var(--vh, 1vh) * 100) !important;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    position: relative;
+    top: 55%;
+}
+
+.cuisine-img {
+    width: 100%;
+    height: auto;
+}
+
+.profilepage {
+    height: 100vh;
+}
+
+.headerCard {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.img-pos {
+    position: relative;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+}
+
+.cardFooter {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.msg-btn {
+    background-color: white;
+    color: #f89801;
+    border-color: #f89801;
+    justify-content: center;
+}
+
+.call-btn {
+    background-color: #f25b00;
+    color: white;
+    justify-content: center;
+}
+
+@media (max-width: 450px) {
+    .cuisine-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .songs {
+        padding-top: 17px;
+        padding-left: 3px;
+    }
+
+    .img-size {
+        width: 68%;
+        height: auto;
+        position: relative;
+        left: 12px;
+    }
+}
+@media(min-width:360px) and (max-width:449px){
+    .fs10{
+        font-size:12px;
+    }
+}
+
+@media(min-width:300px) and (max-width:360px){
+    .fs10{
+        font-size:11px !important;
+    }
+}
