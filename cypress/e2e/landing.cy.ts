@@ -33,7 +33,7 @@ describe('template spec', () => {
         cy.contains('.mb-0', 'You liked her profile').should('exist'); // Check for the liked profile text
 
         cy.intercept('GET', 'http://localhost:4200').as('previousPage');
-        cy.wait(5000);
+        cy.wait(1000);
         // Click the "Go Back" button
         // cy.get('.header-content .backbtn').contains('arrow_back').click({ force: true });
         cy.get('.header-content .backbtn').should('be.visible').click({ force: true });
@@ -44,5 +44,16 @@ describe('template spec', () => {
         cy.url().should('eq', 'http://localhost:4200/');
 
     })
+    it('Should match fixture data', () => {
+        cy.request('GET', 'http://localhost:4200/assets/data/data.json') // Replace '/api/user' with your actual API endpoint
+            .its('body')
+            .then((response) => {
+                // Load fixture data
+                cy.fixture('profileData.json').then((fixtureData) => {
+                    // Compare keys and values of the response with fixture data
+                    expect(response[0]).to.deep.equal(fixtureData[0]);
+                });
+            });
+    });
 
 })
